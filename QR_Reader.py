@@ -29,8 +29,7 @@ while True:
         pts = pts.reshape((-1,1,2))
         cv.polylines(img,[pts],True,myColor,5)
         pts2 = barcode.rect
-        cv.putText(img,myOutput,(pts2[0],pts2[1]),cv.FONT_HERSHEY_SIMPLEX,
-                    0.9,myColor,2)
+        cv.putText(img,myOutput,(pts2[0],pts2[1]),cv.FONT_HERSHEY_SIMPLEX,0.9,myColor,2)
 
     cv.imshow('Result',img)
     cv.waitKey(1)
